@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>niaho</title>
+	<style>
+		* { margin:0; padding: 0;}
+		body { font: 12px/2 Arial, 'Microsoft Yahei'; padding: 30px;}
+		ul { list-style: none;}
+		.cl { clear:both;}
+		.cf:after { content:"."; display:block; height:0; overflow:hidden; clear:both;}
+		* html .cf { height:1%;}
+		* + html .cf { height:1%;}
+
+		#list li { margin-top: 15px;}
+		#list li img { width: 120px; border: 5px solid #DDD; float: left;}
+		#list li .imgInfoSetting { margin-left: 140px;}
+		#drop_zone { width: 500px; height: 120px; background: #F5F5F5; border: 2px solid #DDD; border-radius: 5px; text-align: center;}
+		#drop_zone p { line-height: 60px; font-size: 30px; color: #999;}
+
+		.inputFileBox { position: relative; color: #FFF; background: #0079CB; display: inline-block; width: 60px; overflow: hidden;}
+		.inputFileBox input { position: absolute; top: 0; left: 0; opacity: 0;}
+		.inputFileBox i { font-style: normal;}
+	</style>
+</head>
+<body>
+	<form action="#" id="imgUploads">
+		<div id="drop_zone">
+			<p>拖拽图片到此处上传</p>
+			<em class="inputFileBox"><i>选择图片</i><input multiple type="file" name="hah" id="filehandle" /></em>
+		</div>
+		<ul id="list"></ul>
+	</form>
+	<script src="http://localhost/litchimind/wp-content/themes/bp-notidea/js/jquery.min.js"></script>
+	<script>
+	function readAsImg(files, onload){
+		for (var i = 0, f; f = files[i]; i++) {
+			var reader = new FileReader();
+			reader.onload = (function(f){
+				return function(e){
+					onload(e, f);
+				}
+			})(f);
+			reader.readAsDataURL(f);
+		}
+	}
+
+	function handleFileSelect(evt) {
+		var files;
+		if( evt.files ){
+			files = evt.files; // FileList object.
+		} else {
+			evt.stopPropagation();
+			evt.preventDefault();
+			files = evt.dataTransfer.files; // FileList object.
+		}
+		
+		readAsImg(files, function(e, f){
+			var names = f.name.split('.');
+				names.pop();
+			var name = names.join('.');
+			var output = '<li class="cf"><img class="thumb" src="'+ e.target.result +'" title="'+ name + '"/>\
+				<div class="imgInfoSetting"><input type="hidden" name="img" value="'+ e.target.result +'" />\
+				<label for="">名称</label><input type="text" value="'+ name +'" /><br /> 大小：' + f.size +' bytes</div></li>';
+			$('#list').append(output);
+		});
+	}
+
+	function handleDragOver(evt) {
+		evt.stopPropagation();
+		evt.preventDefault();
+		evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+	}
+
+	$(function(){
+		$('#filehandle').on('change', function(){
+			handleFileSelect(this);
+		});
+
+		var dropZone = document.getElementById('drop_zone');
+		dropZone.addEventListener('dragover', handleDragOver, false);
+		dropZone.addEventListener('drop', handleFileSelect, false);
+
+	});	  
+	</script>
+</body>
+</html>
