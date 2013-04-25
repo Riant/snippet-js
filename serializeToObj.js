@@ -7,19 +7,31 @@ $.fn.extend({
             includeDisabled: false
         }, setting);
         var data = {};
-        $(this).find('input,select,textarea').each(function(){
-            var name = $(this).attr('name') || this.id, type = $(this).attr('type');
-            if( ( ! opts.ignoreIgnoreSet && $(this).data('ignore')) || 'reset-button-submit-file'.indexOf(type) > -1 || ( ! includeDisabled && $(this).is(':disabled'))) return true;
+        $(this).find(':input').each(function(){
+            var name = $(this).attr('name') || this.id, 
+                type = $(this).attr('type');
+
+            if( ( ! opts.ignoreIgnoreSet && $(this).data('ignore')) || 'reset-button-submit-file'.indexOf(type) > -1 || ( ! opts.includeDisabled && $(this).is(':disabled'))) 
+                    return true;
+
             if( name ){
                 var value = $(this).val();
-                if( type == 'radio' && $(this).is(':checked') )
-                    return true;
-                if( type == 'checkbox' && data[name] == 'undefined' )
-                    data[name] = opts.splitStr ? '' : [];
-                else if ( typeof data[name] == 'undefined' ) 
-                    data[name] = value;
-                else {
-                    opts.splitStr ? (data[name] += (opts.splitStr + value)) : data[name].push(value);
+
+                if( data[name] == undefined ){
+                    if( ! opts.splitStr && type == 'checkbox' ){
+                        data[name] = $(this).is(':checked') ? [value] : [];
+                    } else {
+                        data[name] = value;
+                    }
+                } else {
+                    if( opts.splitStr ){
+                        data[name] += (opts.splitStr + value);
+                    } else {
+                        if( typeof data[name] != 'object' )
+                            data[name] = [data[name]];
+                        else
+                            data[name].push(value);
+                    }
                 }
             }
         });
