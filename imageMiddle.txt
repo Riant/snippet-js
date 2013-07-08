@@ -1,0 +1,30 @@
+
+        imgMiddle:  function(cssMethod){
+            if( ! $(this).length ) return;
+            $(this).each(function(){
+                var img = $(this).find('img'),
+                    areaH = $(this).height(),
+                    imgH = img.innerHeight();
+                if( imgH > 0 ){
+                    setImageCss(imgH, areaH, img);
+                } else {
+                    img.load(function(){
+                        imgH = $(this).innerHeight();
+                        setImageCss(imgH, areaH, $(this));                
+                    });
+                }
+            });
+
+            function setImageCss(imgH, areaH, img){
+                if( imgH > 0 && imgH < areaH ){
+                    var vTop = (areaH - imgH) / 2;
+                    if(cssMethod == 'top') {
+                        img.css({position:'relative', top: vTop});    
+                    } else if (cssMethod == 'padding-top') {
+                        img.css({ paddingTop: vTop});    
+                    } else {
+                        img.css({marginTop: vTop});
+                    }
+                }
+            }
+        },

@@ -9,29 +9,31 @@ $.fn.extend({
         var data = {};
         $(this).find(':input').each(function(){
             var name = $(this).attr('name') || this.id, 
-                type = $(this).attr('type');
+            type = $(this).attr('type');
 
-            if( ( ! opts.ignoreIgnoreSet && $(this).data('ignore')) || 'reset-button-submit-file'.indexOf(type) > -1 || ( ! opts.includeDisabled && $(this).is(':disabled'))) 
-                    return true;
+        if( ( ! opts.ignoreIgnoreSet && $(this).data('ignore')) || 'reset-button-submit-file'.indexOf(type) > -1 || ( ! opts.includeDisabled && $(this).is(':disabled'))) 
+                return true;
 
-            if( name ){
-                var value = $(this).val();
+        if( name ){
+            var value = $(this).val();
 
-                if( data[name] == undefined ){
-                    if( ! opts.splitStr && type == 'checkbox' ){
-                        data[name] = $(this).is(':checked') ? [value] : [];
-                    } else {
-                        data[name] = value;
-                    }
+            if( data[name] == undefined ){
+                if( ! opts.splitStr && type == 'checkbox' ){
+                    data[name] = $(this).is(':checked') ? [value] : [];
                 } else {
-                    if( opts.splitStr ){
-                        data[name] += (opts.splitStr + value);
-                    } else {
-                        if( typeof data[name] != 'object' )
-                            data[name] = [data[name]];
-                        else
-                            data[name].push(value);
-                    }
+                    data[name] = value;
+                }
+            } else {
+                if( (type == 'checkbox' || type == 'radio' ) && ! $(this).is(':checked') )
+                    return true;
+                    
+                if( opts.splitStr ){
+                    data[name] += (opts.splitStr + value);
+                } else {
+                    if( typeof data[name] != 'object' )
+                        data[name] = [data[name]];
+                    else
+                        data[name].push(value);
                 }
             }
         });

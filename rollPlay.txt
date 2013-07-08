@@ -1,0 +1,56 @@
+,
+        rollPlayer: function (setting) {
+            // $('#roll').rollPlayer({ itemWidth: 189, showLength: 5, stepLength: 1 });
+            if (!$(this).length) return;
+            setting = setting || {};
+            var opt = $.extend({
+                itemWidth: 0,
+                showLength: 5,
+                stepLength: 1
+            }, setting);
+
+            $(this).each(function () {
+                var rollBody = $(this);
+                var itemLength = rollBody.children().length;
+                if (itemLength < opt.showLength) return;
+
+                rollBody.wrap('<div></div>');
+                var wrap = rollBody.parent();
+                var rollHeight = rollBody.height();
+                var itemWidth = opt.itemWidth ? opt.itemWidth : parseInt(rollBody.children().eq(0).innerWidth()) + 20;
+
+                wrap.css({ overflow: 'hidden', position: 'relative', height: rollHeight })
+                .after('<p class="rollNav"><a href="#" class="prev" style="display:none;">Prev</a><a href="#" class="next">Next</a></p>');
+                rollBody.css({ position: 'absolute', top: 0, left: 0, width: itemWidth * itemLength });
+
+                var rollNavs = wrap.next('p').children('a');
+                var stepWidth = opt.stepLength * itemWidth;
+                rollNavs.on('click', {
+                    rollBody: rollBody,
+                    stepLength: opt.stepLength,
+                    stepWidth: stepWidth,
+                    itemWidth: itemWidth,
+                    showLength: opt.showLength
+                }, rollMove);
+
+
+            });
+            function rollMove(e) {
+                var left = parseInt(e.data.rollBody.css('left'));
+                var toLeft = $(e.target).attr('class') == 'next' ? left - e.data.stepWidth : left + e.data.stepWidth;
+                var outLength = e.data.rollBody.children().length - e.data.showLength;
+
+                $(e.target).parent().children().show();
+                if (toLeft >= 0) {
+                    $(e.target).hide();
+                } else if (toLeft < 0 && -(toLeft / e.data.itemWidth) >= outLength) {
+                    $(e.target).hide();
+                }
+
+                toLeft = toLeft > 0 ? 0 : toLeft;
+                toLeft = toLeft < -1 * outLength * e.data.itemWidth ? -1 * outLength * e.data.itemWidth : toLeft;
+                e.data.rollBody.animate({ left: toLeft }, 200);
+
+                return false;
+            }
+        }
