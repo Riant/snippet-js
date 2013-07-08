@@ -1,0 +1,63 @@
+.login-bg
+{
+	background: url(../../images/client/login_background.png) #fff repeat-x;
+}
+.login-wrap
+{
+	background: url(../../images/client/login_bg.png) transparent no-repeat 50% 0;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 240px;
+	min-height: 550px;
+	_height: 550px;
+}
+.login-wrap .form .login-btn-td
+{
+	padding-left: 22px;
+	vertical-align: top;
+}
+.login-wrap .form .checkAg
+{
+	padding-left: 15px;
+}
+.login-wrap .form .checkAg a
+{
+	color: #3d5c91;
+	text-decoration: underline;
+}
+.login-wrap .form .checkAg a:hover
+{
+	color: #3d5c91;
+	text-decoration: none;
+}
+.login-wrap .form .left-txt
+{
+	color: #3d5b90;
+}
+.login-btn
+{
+	background: url(../../images/client/login_btn.jpg) #fff no-repeat;
+	width: 75px;
+	height: 74px;
+	border: 0px;
+}
+.login
+{
+	width:400px;
+	/*border: 1px solid #ccc;*/
+	padding: 10px 10px 10px 50px;
+	margin: 0px auto;
+}
+.login-footer
+{
+	width:380px;
+	margin: 0px auto;
+	margin-top: 180px;
+}
+.login-footer p
+{
+	color: #9c9c9c;
+	text-align: center;
+	padding-top: 11px;
+	display: block;
+}

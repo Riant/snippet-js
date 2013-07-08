@@ -1,0 +1,38 @@
+<div class="rightContent_toDo" id="rightContent_toDo">
+	<div class="searchForm">
+		<ul>
+			<li id="liTaskName">
+				<label>当前所属环节名称:</label>
+				<span><input type="text" class="formInput" id="taskName"/></span>
+			</li>
+			<li>
+				<label>事项办件编码:</label>
+				<span><input type="text" class="formInput"  id="powerNumber"/></span>
+			</li>
+			<li>
+				<label>当事人:</label>
+				<span><input type="text" class="formInput" id="punishedName"/></span>
+			</li>
+			<li>
+				<label>当事单位:</label>
+				<span><input type="text" class="formInput" id="punishedCompany"/></span>
+			</li>
+			<li>
+				<label>事项名称:</label>
+				<span><input type="text" class="formInput"  id="queryPowerName"/></span>
+			</li>
+			<li>
+				<label>任务到达时间:</label>
+				<span><input id="startTime" type="text" class="formInput" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" readonly="true"/></span>
+				<span>至</span>
+				<span><input id="endTime" type="text" class="formInput" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" readonly="true"/></span>
+			</li>
+			<li style="margin-left:5px;">
+				<span><input type="button" value="检索" class="formbtn" id="searchTask"/></span>
+			</li>
+		</ul>
+	</div>
+	<div style="margin-top:7px;" class="table-nav"><span>当前列表</span><span style="float:right;padding:4px 5px 0px 0px;"><button class="formbtn" id="flashTask">刷新任务列表</button></span></div>
+	<div _rightContent_toDo="dataList" id="dataList"></div>
+</div>
+<script src="../js/client/rightContent_toDo.js"></script> 

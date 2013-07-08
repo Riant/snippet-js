@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*树的样式*/
+.tree
+{
+	width:100%;
+	font-size:12px;/*限定了树中文字*/
+}
+/*树的第一个ul样式*/
+.tree ul.firstUl
+{
+	padding-top:5px;
+	padding-left:5px;
+}
+/*树的整体ul样式(除第一个以外)*/
+.tree ul
+{
+	/*padding-left:10px;*/
+}
+/*树的子元素的样式*/
+.tree ul li
+{
+	clear:both;
+	margin-top:2px;
+}
+/*树中div的默认样式*/
+.tree div.divStyle
+{
+	white-space:nowrap;
+	overflow:hidden;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+/*树中div的选中的样式*/
+.tree div.divStyle_click
+{
+	background:#d3d2d2;
+}
+/*树中div鼠标上移的样式*/
+.tree div.divStyle_hover
+{
+	background:#eeeeee;
+}
+/*小图标和文字的共用样式*/
+.tree ul li div span
+{
+	display:inline-block;
+	height:15px;
+	line-height:15px;
+	vertical-align:middle;
+	overflow:hidden;
+}
+/*小图标arrow的样式*/
+.tree ul li div span.arrow
+{
+	width:10px;
+	background:url(images/checkbox-arr-closed.gif) no-repeat 0px 3px;
+	cursor:pointer;
+}
+/*没有子集的样式*/
+.tree ul li div span.no_children
+{
+	width:10px;
+	background:none;
+	cursor:none;
+}
+/*选中的小图标arrow的样式*/
+.tree ul li div span.arrow_selected
+{
+	background:url(images/checkbox-arr-opened.gif) no-repeat 0px 3px;
+}
+/*小图标checkbox的样式*/
+.tree ul li div span.ico
+{
+	width:14px;
+	background:url(images/checkbox-unchecked.gif) no-repeat;
+	cursor:pointer;
+}
+.tree ul li div span.ico-tt
+{
+	width:14px;
+	height: 16px;
+	background:url(images/ico-txt.jpg) no-repeat;
+	cursor:pointer;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*选中的小图标checkbox的样式*/
+.tree ul li div span.ico_checked
+{
+	background:url(images/checkbox-checked.gif) no-repeat;
+}
+/*选中部分时,小图标checkbox的样式*/
+.tree ul li div span.ico_checkedPart
+{
+	background:url(images/checkbox-partial.gif) no-repeat;
+}
+/*内容的样式*/
+.tree ul li div span.text
+{
+	padding-left:3px;
+	width:auto;
+	white-space:nowrap;
+    word-break:keep-all;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: 14px;
+}

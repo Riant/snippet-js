@@ -1,0 +1,32 @@
+<div class="leftMenu" id="leftMenu">
+	<div class="leftMenu-inner">
+		<div class="leftMenu-search">
+			<p>
+				<select id="powerType" name="powerType">
+					<option value="0">全部</option>
+					<option value="A">A 行政审批（行政许可）</option>
+					<option value="B">B 行政处罚</option>
+					<option value="C">C 行政征收</option>
+					<option value="D">D 行政强制</option>
+					<option value="E">E 行政确认</option>
+					<option value="F">F 行政裁决</option>
+					<option value="G">G 行政给付</option>
+					<option value="Z">Z 其他行政权力</option>
+				</select>
+			</p>
+			<p>
+				<input class="searchInput" type="text" id="powerName" name="powerName" value="" maxlength="30"/>
+				<button class="searchBtn" id="searchPermitted">检索</button>
+			</p>
+			<p class="leftMenu-top">权力事项列表</p>		
+		</div>
+		<div class="leftMenu-content" >
+			<ul _leftMenu="powerMatters" id="addSound">
+				<!-- <li>
+					<a href="javascript:void(0)">权力事项列表权力事项列表权力事项列表权力事项列表权力事项列表</a>
+				</li>  -->
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="../js/client/leftMenu.js"></script> 

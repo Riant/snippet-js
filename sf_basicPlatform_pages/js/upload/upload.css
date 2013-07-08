@@ -1,0 +1,52 @@
+.upload
+{
+/* 	width: 490px; */
+}
+.upload-top
+{
+	padding: 10px 0px;
+}
+.upload-top-txt
+{
+	padding:10px 0px;
+}
+.upload-content
+{
+	border: 1px solid #ADBECE;
+	padding: 0px 10px;
+	overflow: auto;
+	height: 100px;
+	background: #fff;
+}
+.upload-content ul
+{
+	clear: both;
+}
+.upload-content ul li
+{
+	display: inline-block;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+}
+.upload-content ul .upload-txt
+{
+	width: 361px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.upload-content ul form
+{
+	display:inline-block;
+	float:left;
+}
+.upload-btn-white {
+	height: 23px;
+	line-height: 23px;
+	vertical-align: middle;
+	background: url(images/btn_bg.jpg) repeat-x;
+	border: 1px solid #ADABB0;
+	color: black;
+	padding: 0px 10px;
+}

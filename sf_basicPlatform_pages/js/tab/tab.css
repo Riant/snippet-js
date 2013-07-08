@@ -1,0 +1,146 @@
+/*选项卡--begin*/
+/* 横向选项卡 */
+.tab
+{
+	
+}
+.tab_top
+{
+	height:34px;
+	border-bottom:1px solid #c7d4e0;
+	background:url(images/tab_top_bg.jpg) repeat-x;
+}
+.tab_top_title
+{
+	float:left;
+	text-align:center;
+	line-height:25px;
+}
+.tab_top_button
+{
+	float:right;
+	line-height:25px;
+}
+.tab_con
+{
+	margin:10px auto auto auto;
+	width:1000px;
+}
+.tab_top ul
+{
+	
+}
+.tab_top ul li
+{
+	display:inline;
+	float:left;
+	padding-left:18px;
+	padding-right:18px;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	cursor:pointer;
+	color:#fff;
+	font-weight:bold;
+	position:relative;
+	background:#e7f2fa;
+	border:1px solid #c7d4e0;
+	border-bottom:0px;
+	margin-left:7px;
+	border-radius:5px 5px 0px 0px;
+	margin-top:6px;
+	background:url(images/tab_li_bg.jpg) repeat-x;
+}
+.tab_top ul li.selected
+{
+	color:#094293;
+	font-weight:bold;
+	border-bottom:0px;
+	background:url(images/tab_li_selected_bg.gif) #fff repeat-x;
+	height:28px;
+	line-height:28px;
+	margin-bottom:-1px;
+}
+/* 纵向选项卡 */
+.tab_left
+{
+	border-right:1px solid #c6c2c2;
+	margin-left:-1px;
+	background:white;
+	height:224px;
+}
+.tab_left ul li
+{
+	padding-left:15px;
+	padding-right:15px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	cursor:pointer;
+	color:#949292;
+	position:relative;
+	background:#fff;
+	border-left:1px solid #c6c2c2;
+}
+.tab_left ul li.selectLiB
+{
+	color:black;
+	font-weight:bold;
+	border:1px solid #c6c2c2;
+	border-left:0px;
+	border-right:0px;
+	height:25px;
+	line-height:25px;
+	left:1px;
+	background:#efeeef;
+}
+.tab_1
+{
+	height: 40px;
+	line-height: 38px;
+	background-position: right -640px;
+	color: #435B6A;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px white;
+}
+.tab_top_1
+{
+	height: 40px;
+	line-height: 38px;
+	background:url('../../images/rightMenu-bg.png') repeat-x;
+/* 	background-position: right -640px; */
+	color: #435B6A;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px white;
+}
+.tab_top_1 ul
+{
+/* 	margin-left:-10px; */
+}
+.tab_top_1 ul li
+{
+	display:inline;
+	width: 50%;
+	float:left;
+	height:36px;
+	line-height:36px;
+	text-align:center;
+	cursor:pointer;
+	color:#293738;
+	position:relative;
+}
+.tab_top_1 ul li.selectLiB_1
+{
+	color:#0b396a;
+	font-weight:bold;
+	border-bottom:0px;
+	background:#fff;
+	height:36px;
+	line-height:36px;
+	margin-bottom:-1px;
+	background:url('../../images/rightMenu-selected-bg.png') repeat-x;
+}
+
+/*选项卡--end*/

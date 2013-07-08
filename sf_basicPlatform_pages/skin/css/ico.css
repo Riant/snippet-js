@@ -1,0 +1,796 @@
+/* ico */
+.ico-user,.ico-edit,.ico-add,.ico-chat,.ico-trush,.ico-drafts,.ico-folder,.ico-box,.ico-box-blue,.ico-arrow-gray,.ico-arrow-down,.ico-arrow-up,.ico-refresh,.ico-forward,.ico-big-delete,.ico-message,.ico-line,.ico-login,.ico-family,.ico-friends,.ico-upgrouped,.ico-custom,.ico-arrow-orange,.ico-small-add,.ico-small-delete,.ico-small-move,.ico-small-import,.ico-small-export,.ico-d-up,.ico-d-down,.ico-checkbox,.ico-small-bg,.ico-small-mail,.ico-small-voice,.ico-small-pic,.ico-small-edit,.ico-gray-edit,.ico-gray-close,.ico-close-button,.ico-library-edit,.ico-library-delete,.ico-library-pic-upload,.ico-library-pic-editor,.ico-library-pic-forward,.ico-library-pic-delete,.ico-library-pic-move,.ico-arrow-back,.ico-sendMessage-pic,.ico-sendMessage-audio,.ico-sendMessage-video,.ico-sendMessage-phrases,.ico-bubble-forward,.ico-bubble-favorites,.ico-bubble-delete,.ico-right,.ico-right-gray,.ico-right-v,.ico-error-v,.ico-right-big,.ico-right-big-2,.ico-services,.ico-s-arrow-d,.ico-save-folder,.ico-edit-folder,.ico-delete-folder,.ico-prev-close,.ico-play,.ico-pause,.ico-skin-blue,.ico-skin-green,.ico-skin-gray,.ico-cack,.ico-vi,.ico-play-l,.ico-down-l,.ico-close-l,.ico-operate-l,.ico-operate-prohibit,.ico-pager-l,.ico-pager-r,.ico-gj-big-2,.ico-right-blue,.ico-search,.ico-btn-mtl,.ico-cha-red,.ico-unknownFiles,.ico-u-voice,.ico-u-unkown,.ico-u-pic,.ico-u-video,.ico-showMMS-play,.ico-showMMS-del,.ico-showMMS-edit,.ico-right-green,.ico-select-box,.ico-botton-edit,.ico-botton-delete,.ico-auto-send-edit,.ico-auto-send-delete,.ico-cake-gray,.ico-cake-reminder,.ico-cake-reminder-gray,.ico-s-arrow-u,.ico-delete-contact,.ico-sms-capacity,.ico-mms-capacity,.ico-session-select,.ico-session-close,.ico-draft-msg,.ico-trash-msg,.ico-time
+	{
+	background: url('../images/ico.png') no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ico-txt {
+	display: inline-block;
+	vertical-align: middle;
+	font-style: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ico-user {
+	width: 20px;
+	height: 20px;
+	background-position: 0px 0px;
+	cursor: pointer;
+}
+
+.ico-edit {
+	width: 13px;
+	height: 13px;
+	background-position: -44px 0px;
+}
+
+.ico-add {
+	width: 12px;
+	height: 12px;
+	background-position: -57px 0px;
+}
+
+.ico-chat {
+	width: 14px;
+	height: 12px;
+	background-position: -69px 0px;
+}
+
+.ico-trush {
+	width: 16px;
+	height: 16px;
+	background-position: -184px -130px;
+}
+
+.ico-drafts {
+	width: 15px;
+	height: 16px;
+	background-position: -70px -109px;
+}
+
+.ico-folder {
+	width: 12px;
+	height: 12px;
+	background-position: -95px 0px;
+}
+
+.ico-box {
+	width: 30px;
+	height: 19px;
+	line-height: 15px;
+	background-position: -107px 0px;
+	font-size: 11px;
+}
+
+.ico-box-blue {
+	width: 24px;
+	height: 18px;
+	line-height: 16px;
+	background-position: -24px -20px;
+	text-align: center;
+	color: white;
+	font-size: 11px;
+}
+
+.ico-arrow-down {
+	width: 7px;
+	height: 4px;
+	background-position: -28px -13px;
+	cursor: pointer;
+}
+
+.ico-arrow-up {
+	width: 7px;
+	height: 4px;
+	background-position: -35px -13px;
+	cursor: pointer;
+}
+
+.ico-arrow-gray {
+	width: 8px;
+	height: 4px;
+	background-position: -20px -13px;
+	cursor: pointer;
+}
+
+.ico-refresh {
+	width: 16px;
+	height: 11px;
+	background-position: -137px 0px;
+}
+
+.ico-forward {
+	width: 11px;
+	height: 11px;
+	background-position: 0 -20px;
+	cursor: pointer;
+}
+
+.ico-big-delete {
+	width: 10px;
+	height: 8px;
+	background-position: 0 -31px;
+	cursor: pointer;
+}
+
+.ico-message {
+	width: 12px;
+	height: 11px;
+	background-position: -12px -20px;
+	cursor: pointer;
+}
+
+.ico-line {
+	width: 1px;
+	background: #4b5356;
+	border-right: 1px solid #a4acaf;
+	height: 8px;
+	margin: 0 5px 0 5px;
+}
+
+.ico-login {
+	width: 25px;
+	height: 26px;
+	background-position: 0px -38px;
+}
+
+.ico-family {
+	width: 23px;
+	height: 12px;
+	background-position: -90px -24px;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.ico-friends {
+	width: 22px;
+	height: 11px;
+	background-position: -69px -24px;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.ico-upgrouped {
+	width: 20px;
+	height: 11px;
+	background-position: -48px -24px;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.ico-custom {
+	width: 22px;
+	height: 12px;
+	background-position: -112px -24px;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.ico-SMS,.ico-signature,.ico-warehouse {
+	background: url('../images/ico-business.png') no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 81px;
+	height: 82px;
+}
+
+.ico-signature {
+	background-position: -81px 0px;
+}
+
+.ico-warehouse {
+	background-position: -162px 0px;
+}
+
+.ico-big-warehouse,.ico-big-signature,.ico-big-messageCopy {
+	background: url('../images/ico-allPackage-big.png') no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ico-big-warehouse {
+	width: 58px;
+	height: 44px;
+	background-position: 0px 0px;
+}
+
+.ico-big-signature {
+	width: 59px;
+	height: 55px;
+	background-position: -111px 0px;
+}
+
+.ico-big-messageCopy {
+	width: 53px;
+	height: 36px;
+	background-position: -58px 0px;
+}
+
+.ico-small-warehouse,.ico-small-signature,.ico-small-messageCopy {
+	background: url('../images/ico-allPackage-small.png') no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ico-small-warehouse {
+	width: 38px;
+	height: 29px;
+	background-position: 0px -9px;
+}
+
+.ico-small-signature {
+	width: 40px;
+	height: 38px;
+	background-position: -38px -1px;
+}
+
+.ico-small-messageCopy {
+	width: 39px;
+	height: 26px;
+	background-position: -78px -12px;
+}
+
+.ico-arrow-orange {
+	width: 5px;
+	height: 9px;
+	background-position: -153px 0;
+}
+
+.ico-small-add {
+	width: 14px;
+	height: 13px;
+	background-position: 0 -41px;
+}
+
+.ico-small-delete {
+	width: 13px;
+	height: 13px;
+	background-position: -14px -41px;
+}
+
+.ico-small-move {
+	width: 18px;
+	height: 12px;
+	background-position: -27px -42px;
+}
+
+.ico-small-import {
+	width: 12px;
+	height: 16px;
+	background-position: -45px -38px;
+}
+
+.ico-small-export {
+	width: 12px;
+	height: 16px;
+	background-position: -57px -38px;
+}
+
+.ico-d-up,.ico-d-down {
+	width: 6px;
+	height: 4px;
+}
+
+.ico-d-up {
+	background-position: -158px 0;
+}
+
+.ico-d-down {
+	background-position: -158px -6px;
+}
+
+.ico-checkbox {
+	width: 14px;
+	height: 15px;
+	background-position: -164px 0;
+}
+
+.ico-small-bg {
+	width: 18px;
+	height: 14px;
+	background-position: -134px -20px;
+	padding-top: 4px;
+	text-align: center;
+}
+
+.ico-small-bg span,.ico-small-bg em,.ico-small-bg i {
+	*display: block;
+}
+
+.ico-small-bg:hover {
+	background-position: -152px -20px;
+}
+
+.ico-small-mail {
+	width: 12px;
+	height: 9px;
+	background-position: -69px -45px;
+}
+
+.ico-small-voice {
+	width: 7px;
+	height: 10px;
+	background-position: -81px -44px;
+	cursor: pointer;
+}
+
+.ico-small-pic {
+	width: 14px;
+	height: 12px;
+	background-position: -87px -42px;
+}
+
+.ico-small-edit {
+	width: 9px;
+	height: 9px;
+	background-position: -101px -45px;
+}
+
+.ico-gray-edit {
+	width: 9px;
+	height: 9px;
+	background-position: -110px -45px;
+}
+
+.ico-gray-close {
+	width: 7px;
+	height: 6px;
+	background-position: -119px -48px;
+}
+
+.ico-close-button {
+	width: 21px;
+	height: 20px;
+	background-position: -178px 0px;
+}
+
+.ico-library-edit {
+	width: 12px;
+	height: 12px;
+	background-position: -170px -26px;
+	cursor: pointer;
+}
+
+.ico-library-delete {
+	width: 9px;
+	height: 11px;
+	background-position: -182px -27px;
+	cursor: pointer;
+}
+
+.ico-library-pic-upload {
+	width: 7px;
+	height: 8px;
+	background-position: -126px -46px;
+}
+
+.ico-library-pic-editor {
+	width: 8px;
+	height: 8px;
+	background-position: -133px -46px;
+}
+
+.ico-library-pic-forward {
+	width: 9px;
+	height: 6px;
+	background-position: -141px -48px;
+}
+
+.ico-library-pic-delete {
+	width: 7px;
+	height: 9px;
+	background-position: -150px -45px;
+}
+
+.ico-arrow-back {
+	width: 16px;
+	height: 13px;
+	background-position: -157px -41px;
+}
+
+.ico-sendMessage-pic {
+	width: 17px;
+	height: 16px;
+	background-position: 0 -54px;
+}
+
+.ico-sendMessage-audio {
+	width: 17px;
+	height: 16px;
+	background-position: -17px -54px;
+}
+
+.ico-sendMessage-video {
+	width: 16px;
+	height: 15px;
+	background-position: -34px -54px;
+}
+
+.ico-sendMessage-phrases {
+	width: 16px;
+	height: 15px;
+	background-position: -50px -54px;
+}
+
+.ico-bubble-forward {
+	width: 12px;
+	height: 11px;
+	background-position: -66px -54px;
+}
+
+.ico-bubble-favorites {
+	width: 11px;
+	height: 10px;
+	background-position: -78px -54px;
+}
+
+.ico-bubble-delete {
+	width: 7px;
+	height: 9px;
+	background-position: -89px -54px;
+}
+
+.ico-right {
+	width: 10px;
+	height: 8px;
+	background-position: -173px -46px;
+}
+
+.ico-right-gray {
+	width: 10px;
+	height: 7px;
+	background-position: -183px -47px;
+}
+
+.ico-right-big {
+	width: 25px;
+	height: 18px;
+	background-position: 0 -70px;
+}
+
+.ico-right-big-2 {
+	width: 32px;
+	height: 30px;
+	background-position: 0 -88px;
+}
+
+.ico-gj-big-2 {
+	width: 38px;
+	height: 39px;
+	background-position: -32px -88px;
+}
+
+.ico-services {
+	width: 16px;
+	height: 18px;
+	background-position: -25px -70px;
+}
+
+.ico-time {
+	width: 16px;
+	height: 18px;
+	background-position: -168px -129px;
+}
+
+/*.ico-s-arrow-d
+
+
+
+
+
+
+{
+	width:9px;
+	height:9px;
+	background-position:-191px -29px;
+	cursor:pointer;
+}*/
+.ico-s-arrow-d,.ico-s-arrow-u {
+	width: 9px;
+	height: 5px;
+	background-position: -115px -122px;
+	cursor: pointer;
+}
+
+.ico-s-arrow-u {
+	background-position: -124px -122px;
+}
+
+.ico-right-v {
+	width: 12px;
+	height: 11px;
+	background-position: -53px -69px;
+}
+
+.ico-error-v {
+	width: 12px;
+	height: 12px;
+	background-position: -41px -69px;
+}
+
+.ico-save-folder {
+	width: 9px;
+	height: 8px;
+	background-position: -96px -54px;
+	cursor: pointer;
+}
+
+.ico-edit-folder {
+	width: 9px;
+	height: 9px;
+	background-position: -105px -54px;
+	cursor: pointer;
+}
+
+.ico-delete-folder {
+	width: 7px;
+	height: 10px;
+	background-position: -114px -54px;
+	cursor: pointer;
+}
+
+.ico-prev-close {
+	width: 15px;
+	height: 13px;
+	background-position: -65px -69px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.ico-play {
+	width: 27px;
+	height: 17px;
+	background-position: -80px -69px;
+	cursor: pointer;
+}
+
+.ico-pause {
+	width: 14px;
+	height: 18px;
+	background-position: -107px -69px;
+	cursor: pointer;
+}
+
+.ico-skin-blue,.ico-skin-green,.ico-skin-gray {
+	width: 10px;
+	height: 9px;
+	background-position: -121px -55px;
+	cursor: pointer;
+}
+
+.ico-skin-green {
+	background-position: -131px -55px;
+}
+
+.ico-skin-gray {
+	background-position: -141px -55px;
+}
+
+.ico-cack {
+	width: 13px;
+	height: 13px;
+	background-position: -121px -74px;
+	cursor: pointer;
+}
+
+.ico-cake-gray {
+	width: 13px;
+	height: 13px;
+	background-position: -35px -131px;
+	cursor: pointer;
+}
+
+.ico-cake-reminder {
+	width: 17px;
+	height: 13px;
+	background-position: -75px -131px;
+	cursor: pointer;
+}
+
+.ico-cake-reminder-gray {
+	width: 17px;
+	height: 13px;
+	background-position: -150px -131px;
+}
+
+.ico-vi {
+	width: 12px;
+	height: 11px;
+	background-position: -151px -55px;
+	cursor: pointer;
+}
+
+.ico-play-l {
+	width: 10px;
+	height: 9px;
+	background-position: -134px -78px;
+}
+
+.ico-down-l {
+	width: 7px;
+	height: 11px;
+	background-position: -144px -76px;
+}
+
+.ico-close-l {
+	width: 9px;
+	height: 9px;
+	background-position: -151px -78px;
+}
+
+.ico-operate-l {
+	width: 13px;
+	height: 13px;
+	background-position: -163px -55px;
+}
+
+.ico-operate-prohibit {
+	width: 14px;
+	height: 14px;
+	background-position: -176px -55px;
+}
+
+.ico-pager-l {
+	width: 5px;
+	height: 9px;
+	background-position: -160px -78px;
+}
+
+.ico-pager-r {
+	width: 5px;
+	height: 9px;
+	background-position: -165px -78px;
+}
+
+.ico-right-blue {
+	width: 9px;
+	height: 7px;
+	background-position: -190px -55px;
+}
+
+.ico-search {
+	width: 14px;
+	height: 14px;
+	background-position: -170px -73px;
+	cursor: pointer;
+}
+
+.ico-btn-mtl {
+	width: 42px;
+	height: 21px;
+	background-position: -70px -88px;
+	cursor: pointer;
+}
+
+.ico-cha-red {
+	width: 8px;
+	height: 7px;
+	background-position: -190px -62px;
+	cursor: pointer;
+}
+
+.ico-unknownFiles {
+	width: 10px;
+	height: 13px;
+	background-position: -184px -74px;
+	cursor: pointer;
+}
+
+.ico-u-voice,.ico-u-unkown,.ico-u-pic,.ico-u-video {
+	width: 11px;
+	height: 13px;
+	background-position: -112px -88px;
+	cursor: pointer;
+}
+
+.ico-u-unkown {
+	background-position: -123px -88px;
+}
+
+.ico-u-pic {
+	background-position: -134px -88px;
+}
+
+.ico-u-video {
+	background-position: -145px -88px;
+}
+
+.ico-showMMS-play {
+	width: 7px;
+	height: 7px;
+	background-position: -156px -88px;
+	cursor: pointer;
+}
+
+.ico-showMMS-del {
+	width: 8px;
+	height: 7px;
+	background-position: -163px -88px;
+	cursor: pointer;
+}
+
+.ico-showMMS-edit {
+	width: 10px;
+	height: 10px;
+	background-position: -171px -88px;
+	cursor: pointer;
+}
+
+.ico-right-green {
+	width: 12px;
+	height: 8px;
+	background-position: -181px -88px;
+}
+
+.ico-select-box {
+	width: 13px;
+	height: 12px;
+	background-position: -178px -101px;
+	cursor: pointer;
+}
+
+.ico-botton-edit {
+	width: 18px;
+	height: 16px;
+	background-position: 0 -127px;
+}
+
+.ico-botton-delete {
+	width: 17px;
+	height: 17px;
+	background-position: -18px -127px;
+}
+
+.ico-auto-send-edit {
+	width: 8px;
+	height: 8px;
+	background-position: -98px -119px;
+}
+
+.ico-auto-send-delete {
+	width: 9px;
+	height: 8px;
+	background-position: -106px -119px;
+}
+
+.ico-delete-contact {
+	width: 8px;
+	height: 7px;
+	background-position: -10px -31px;
+	cursor: pointer;
+}
+
+.ico-sms-capacity {
+	width: 13px;
+	height: 9px;
+	background-position: -48px -135px;
+}
+
+.ico-mms-capacity {
+	width: 14px;
+	height: 13px;
+	background-position: -61px -131px;
+}
+
+.ico-session-select {
+	width: 11px;
+	height: 9px;
+	background-position: -92px -135px;
+}
+
+.ico-session-close {
+	width: 10px;
+	height: 8px;
+	background-position: -103px -136px;
+}
+
+.ico-draft-msg {
+	width: 19px;
+	height: 15px;
+	background-position: -113px -129px;
+}
+
+.ico-trash-msg {
+	width: 18px;
+	height: 15px;
+	background-position: -132px -129px;
+}
