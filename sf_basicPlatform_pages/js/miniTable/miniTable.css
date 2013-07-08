@@ -1,0 +1,261 @@
+.miniTable-div
+
+{
+	border: 1px solid #DDD;
+	position: relative;
+	/* 火狐禁止选中 */
+	/*-moz-user-select: none; */
+	-khtml-user-select: none;
+	user-select: none;
+	background:#fff;
+	clear:both;
+}
+.miniTable-mask
+{
+	background: #000;
+	opacity: 0.15;
+	filter: Alpha(Opacity=15);
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.miniTable-loading
+{
+	z-index: 2;
+	position: absolute;
+	width: 80px;
+	height: 50px;
+	line-height: 50px;
+	background: #fff;
+	text-align: center;
+	border: 2px solid #ccc;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.miniTable-div .miniTable-checkbox
+{
+	display: inline-block;
+	vertical-align: middle;
+	_margin-top:-4px;
+}
+.miniTable-div table
+{
+	border-collapse: collapse;
+/*	white-space: normal;*/
+/*	word-break: break-all;*/
+ 	table-layout: fixed; 
+	vertical-align: middle;
+	/*display: table;*/
+	/*width:100%;*/
+	width: auto;
+}
+.miniTable-h-inner
+{
+	float:left;
+	padding-right:20px;
+	position:relative;
+}
+.miniTable-f
+{
+	/*width: 480px;*/
+}
+.miniTable-div-container
+{
+	position:relative;
+	left:0px;
+	top:0px;
+	background: url(images/minitable-th-bg.png) repeat-x;
+}
+.miniTable-m
+{
+	overflow: auto;
+	position: relative;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+.miniTable-h-table tr,.miniTable-m-table tr
+{
+	display: table-row;
+}
+.miniTable-m-table
+{
+	border-collapse: collapse;
+	vertical-align: middle;
+}
+.miniTable-m-interlacedColor td
+{
+	background: none;
+	background: #fcfbfb;
+}
+.miniTable-tr-td td,.miniTable-tr-td th,.miniTable-h-th
+{
+	background: #eee;
+}
+.minitable-tr-click td
+{
+	border: 1px solid #FAD42E;
+	background: #FBEC88
+}
+.miniTable-h
+{
+	/*padding-right: 20px;*/
+	/*border-bottom:1px solid #ddd;*/
+	position: relative;
+	overflow-x: hidden;
+	zoom:1;
+	border-right:1px solid #ddd; 
+}
+.miniTable-h-table th div
+{
+	overflow: hidden;
+	position: relative;
+	_padding-top:2px;
+	_float: left;
+}
+.miniTable-h-table th
+{
+	padding: 3px 5px 0px 5px;
+	font-size: 14px;
+	border-right: 1px solid #DDD;
+	font-weight: bold;
+    text-align: center;
+    height: 22px;
+    overflow: hidden;
+    /*cursor: pointer;*/
+}
+.miniTable-m-table td
+{
+	border: 1px solid #DDD;
+	border-top: 0px;
+	border-left: 0px;
+	padding: 5px 5px 5px 5px;
+	font-size: 14px;
+}
+.miniTable-div .miniTable-text-limit 
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	zoom:1;
+}
+.miniTable-h-table td a,.miniTable-m-table td a
+{
+	font-size: 12px;
+}
+.miniTable-resize
+{
+	float: right;
+	margin: 0px -5px 0px 0;
+	height: 20px !important;
+	position: relative;
+	cursor: e-resize;
+	display: inline;
+	overflow: hidden;
+}
+.miniTable-line
+{
+	width: 2px;
+	left: 0;
+	background-color: #777;
+	cursor: e-resize;
+	cursor: col-resize;
+	position: absolute;
+	top: 0;
+	height: 100px;
+	overflow: hidden;
+	display: none;
+	border: 0 none;
+	z-index: 99999;
+}
+.miniTable-f .pager
+{
+	text-align: center;
+	border: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.miniTable-f
+{
+	/*padding: 10px 0px 10px 0px;*/
+	text-align: center;
+	padding-right: 20px;
+	position: relative;
+	/*border-top: 1px solid #ddd;*/
+	background: url(images/minitable-bottom-bg.png) repeat-x;
+}
+.miniTable-div .miniTable-f-table
+{
+	width: 100%;
+}
+.miniTable-f .pager a
+{
+	font-size: 12px;
+	display: inline-block;
+	vertical-align:middle;
+	padding: 3px 5px;
+	/*border: 1px solid #e6efec;*/
+	margin-right: 5px;
+	color: blue;
+}
+.miniTable-f .pager a:hover,.miniTable-f .pager a.selected
+{
+	/*border: 1px solid blue;*/
+	text-decoration: underline;
+}
+.miniTable-f .pager span
+{
+	font-size: 12px;
+	margin-right: 5px;
+	color: #000; 
+	display:inline-block;
+	vertical-align:middle;
+}
+.miniTable-f .pager em
+{
+	font-style: normal;
+	font-size: 12px;
+	color: #000; 
+}
+.miniTable-ico-box
+{
+	width: 7px;
+	display: inline-block;
+	height: 10px;
+	vertical-align: middle;
+	overflow: hidden;
+	display: none;
+}
+.miniTable-arrow-up,.miniTable-arrow-down
+{
+	background: url(images/ico_bg.gif) no-repeat;
+	width: 7px;
+	height: 4px;
+	cursor: pointer;
+	display: block;
+}
+.miniTable-arrow-disabled
+{
+	opacity: 0.35;
+	filter: Alpha(Opacity=35);
+}
+.miniTable-arrow-down
+{
+	background-position: 0px -5px;
+	margin-top: 2px;
+}
+.minitable-btn
+{
+	height:23px;
+	background:url(images/minitable_btn_bg.jpg) repeat-x;
+	display:inline-block;
+	vertical-align:middle;
+	padding:0px 7px;
+	color:#000;
+	cursor:pointer;
+	border:1px solid #adadaf;
+}

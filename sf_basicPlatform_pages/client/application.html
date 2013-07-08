@@ -1,0 +1,105 @@
+<div class="formPage" id="application">
+	<div class="formPage-nav" _application="nav">
+	</div>
+	<div class="formPage-content" _public="formBox">
+		<table class="formPage-table">
+			<tr>
+				<td class="formPage-ltd" colspan="3" >录入人员姓名</td>
+				<td class="formPage-rtd" id="userName" ></td>
+				<td class="formPage-ltd">录入时间</td>
+				<td class="formPage-rtd"></td>
+			</tr>
+			<tr>
+				<td class="formPage-ltd" colspan="3">受理机关名称</td>
+				<td id="DEPT"></td>
+				<td class="formPage-ltd">事项办件编码</td>
+				<td id="PROCESS_CODE" ></td>
+			</tr>
+			<tr>
+				<td rowspan="5" class="formPage-c">申请人基本信息</td>
+				<td class="formPage-c formPage-weight">当事人</td>
+				<td class="formPage-c-2"><span class="formPage-point">*</span>姓名</td>
+				<td><input type="text" class="formPage-input" id="PARTIES_NAME" name="PARTIES_NAME" maxlength="20"/></td>
+				<td class="formPage-ltd">身份证(其他有效证件)号码</td>
+				<td><input type="text" class="formPage-input" id="CARD_NUM" name="CARD_NUM" maxlength="18"/></td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="formPage-c formPage-weight">单位</td>
+				<td class="formPage-c-2"><span class="formPage-point">*</span>名称</td>
+				<td><input type="text" class="formPage-input" id="ILLEGAL_DEPT_NAME" name="ILLEGAL_DEPT_NAME" maxlength="50"/></td>
+				<td class="formPage-ltd">单位性质</td>
+				<td>
+					<select class="formPage-select" id="NATURE_UNIT" name="NATURE_UNIT">
+						<option value="国家行政机关">国家行政机关</option>
+						<option value="事业单位">事业单位</option>
+						<option value="企业">企业</option>
+						<option value="其他">其他</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="formPage-c-2">证照编号</td>
+				<td><input type="text" class="formPage-input" id="ILLEGAL_DEPT_DOCUMENT_NO" name="ILLEGAL_DEPT_DOCUMENT_NO" maxlength="50"/></td>
+				<td class="formPage-ltd">法定代表人(负责人)</td>
+				<td>
+					<input type="text" class="formPage-input" id="REPRESENTATIVE" name="REPRESENTATIVE" maxlength="20"/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="formPage-c-2">联系电话</td>
+				<td><input type="text" class="formPage-input" id="PHONE" name="PHONE" maxlength="18"/></td>
+				<td class="formPage-ltd">邮政编码</td>
+				<td><input type="text" class="formPage-input" id="POSTAL_CODE" name="POSTAL_CODE" maxlength="18"/></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="formPage-c-2"><span class="formPage-point">*</span>地址</td>
+				<td colspan="3"><input type="text" class="formPage-input-address" id="PARTIES_ADDR" name="PARTIES_ADDR" maxlength="100"/></td>
+			</tr>
+			<tr>
+				<td rowspan="4" class="formPage-c">征收基本信息</td>
+				<td colspan="2" class="formPage-c-2"><span class="formPage-point">*</span>被征收对象性质</td>
+				<td colspan="3">
+					<span class="formPage-radio"><input type="radio" name="COMPANY_PROPERTY" id="COMPANY_PROPERTY" value="个人" checked="checked"/></span>
+					<span class="formPage-txt" >个人</span>
+					<span class="formPage-radio"><input type="radio" name="COMPANY_PROPERTY" id="COMPANY_PROPERTY" value="企业"/></span>
+					<span class="formPage-txt">企业</span>
+					<span class="formPage-radio"><input type="radio" name="COMPANY_PROPERTY" id="COMPANY_PROPERTY" value="其他" /></span>
+					<span class="formPage-txt">其他</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="formPage-c-2">申请内容</td>
+				<td colspan="3">
+					<textarea class="formPage-textarea" id="APPLICATION_CONTENT" name="APPLICATION_CONTENT"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="formPage-c-2">备注</td>
+				<td colspan="3">
+					<textarea class="formPage-textarea" id="COLLECTION_REMARKS" name="COLLECTION_REMARKS"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"  class="formPage-c-2">文件上传</td>
+				<td colspan="3">
+					<div  id="uploadDiv">
+<!-- 						<div class="formPage-upload-top"> -->
+<!-- 							<input type="file" value="选择附件" name="uploadFile" id="uploadFile"> -->
+<!-- 							<button class="formbtn-white"  id="addFile">上传</button> -->
+<!-- 						</div> -->
+<!-- 						<div class="formPage-upload-content"  id="fileId"> -->
+<!-- 							<ul>
+<!-- 								<li class="formPage-upload-txt">文件信息.doc</li> -->
+<!-- 								<li> -->
+<!-- 									<button class="formbtn-white">下载</button> -->
+<!-- 									<button class="formbtn-white">删除</button> -->
+<!-- 								</li> -->
+<!-- 							</ul> -->
+<!-- 						</div> -->
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<script src="../js/client/application.js"></script> 

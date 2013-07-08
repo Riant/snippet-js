@@ -1,0 +1,35 @@
+<div class="login-bg" id="login">
+	<div class="login-wrap">
+		<div class="wrapper login">
+			<form action="loginSYS.action" method="post" id="js_loginForm">
+				<table class="form">
+					<tr>
+						<td class="left-txt">用户名:</td>
+						<td><input class="input-text-login" name="loginUser.userLoginName" id="userLoginName" maxlength="20" data-rule-required="true" value="用户01"/>
+						</td>
+						<td rowspan="2" class="login-btn-td">
+							<input type="submit" class="login-btn" id="login" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td class="left-txt">密码:</td>
+						<td><input class="input-text-login" type="password"
+							id="password" name="loginUser.userPassword" maxlength="20" data-rule-required="true" value="egov119"/></td>
+					</tr>
+					<tr>
+						<td class="left-txt">验证码:</td>
+						<td><input class="input-keyCode" type="text" id="authCode"
+							name="loginUser.authCode" data-rule-required="true" maxlength="10" /> <img
+							src="../skin/images/wait.gif" class="keyCode-img" id="codeImg"></td>
+						<td class="checkAg"><a id="Reacquire">看不清楚换一个</a></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="login-footer">
+			<p>版权所有:四川省人民政府办公厅</p>
+			<p>IE设置建议使用IE7及以上版本 (7,8,9)浏览器</p>
+		</div>
+	</div>
+</div>
+<script src="../js/client/login.js"></script>

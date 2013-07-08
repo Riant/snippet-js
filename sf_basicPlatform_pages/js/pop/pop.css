@@ -1,0 +1,199 @@
+.fixed-top
+{
+	position:fixed;
+	bottom:auto;top:0px;
+}
+* html .fixed-top /* IE6 */
+{
+	position:absolute;
+	bottom:auto;
+	top:expression(eval(document.documentElement.scrollTop));
+}
+.pop-cont
+{
+	padding:15px 0;
+	text-align:center;
+	color:#3a75b9;
+}
+.pop-cont em
+{
+	margin-right:5px;
+}
+.pop-div-content .inner .btn
+{
+	text-align:center;
+	padding-bottom: 10px;
+}
+.pop-div-content .inner .btn .pop-button span
+{
+	min-width:75px;
+	_width:75px;
+	text-align:center;
+}
+.pop-div
+{
+	
+}
+.pop-div-mask
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.pop-div-top,.pop-div-top-2
+{
+	background:url(images/pop-header-l.png) no-repeat;
+	padding-left:8px;
+	position:relative;
+}
+.pop-div-top .inner
+{
+	background:url(images/pop-header.png) no-repeat right 0;
+	height:34px;
+	line-height:34px;
+	font-weight:bold;
+	color:white;
+	padding-left:5px;
+	text-shadow: 0 1px 1px #6494A5;
+}
+.pop-div-top-close
+{
+	position:absolute;
+	top:8px;
+	right:10px;
+	cursor:pointer;
+	width:20px;
+	height:20px;
+	background:url(images/pop-close.png) no-repeat;
+}
+.pop-div-content
+{
+	background:url(images/pop-content-l.png) repeat-y;
+	padding-left:7px;
+}
+.pop-div-content .inner
+{
+	padding:0 0 0 2px;
+	background:url(images/pop-content.png) repeat-y right 0;
+}
+.pop-div-content .inner .inner-content
+{
+	overflow-x:hidden;
+	overflow-y:auto;
+	margin-right:3px;
+	position:relative;
+}
+.pop-div-footer
+{
+	padding-left:7px;
+	background:url(images/pop-footer-l.png) no-repeat;
+}
+.pop-div-footer .inner
+{
+	height:11px;
+	background:url(images/pop-footer.png) no-repeat right 0;
+}
+/**/
+.pop-create-tipBox
+{
+	float:left;
+	position:absolute;
+}
+.pop-create-tipBox-left
+{
+	float:left;
+	padding-left:11px;
+	height:52px;
+	background:url(images/popUpBox_left.gif) no-repeat;
+}
+.pop-create-tipBox-middle
+{
+	float:left;
+	height:52px;
+	line-height:52px;
+	background:url(images/popUpBox_infoBox_bg.gif) repeat-x;
+	color:#606060;
+	font-weight:bold;
+}
+.pop-create-tipBox-right
+{
+	float:left;
+	width:11px;
+	height:52px;
+	background:url(images/popUpBox_infoBox_right.gif) no-repeat;
+}
+.pop-create-tipBox-success
+{
+	background:url(images/popUpBox_infoBox_success.gif) no-repeat;
+	padding-left:52px;
+}
+.pop-create-tipBox-error
+{
+	background:url(images/popUpBox_infoBox_wrong.gif) no-repeat;
+	padding-left:52px;
+}
+.pop-create-tipBox-wait-box
+{
+	background:url(images/wait.gif) no-repeat 50% 50%;
+	width:16px;
+	height:52px;
+	float:left;
+	margin-right:5px;
+}
+.pop-create-tipBox-wait
+{
+	
+}
+.pop-ico-confirm,.pop-ico-success,.pop-ico-error
+{
+	background:url('images/ico.png') no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+}
+.pop-ico-confirm
+{
+	width:38px;
+	height:39px;
+	background-position:0 0;
+}
+.pop-ico-success
+{
+	width:32px;
+	height:30px;
+	background-position:-38px 0;
+}
+.pop-ico-error
+{
+	width:30px;
+	height:29px;
+	background-position:-70px 0;
+}
+.pop-button,.pop-button span
+{
+	background:url('images/button.png') no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+	min-width:60px;
+	_width:60px;
+	text-align:center;
+}
+.pop-button
+{
+	background-position:0px -309px;
+	padding-left:19px;
+}
+.pop-button span
+{
+	text-shadow: 0 1px 1px #62acd5;
+	color:#fff;
+	height:35px;
+	line-height:33px;
+	padding-right:19px;
+	background-position:right -344px;
+	font-size:13px;
+	font-weight:bold;
+	min-width:42px;
+	_width:42px;
+	text-align:center;
+}

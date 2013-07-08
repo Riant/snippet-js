@@ -1,0 +1,237 @@
+.validate
+{
+/* 	padding:8px; */
+/* 	position:relative; */
+/* 	padding:0px 8px 0px 0px; /*左边*/
+ 	padding:0px 0px 0px 8px; /*右边*/
+	z-index:996;
+	color:#555555;
+	float:left;
+}
+.validate_noP
+{
+	padding:0px;
+}
+.validate_wrap
+{
+	padding:6px;
+	background:#fff;/*背景色*/
+	border:1px solid #bbb8b8;/*边框色*/
+	/*火狐下的圆角*/
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	/*阴影,不支持ie6*/
+	box-shadow: 1px 1px 1px #c3c1c1;
+	-moz-box-shadow: 1px 1px 1px #c3c1c1;
+	-webkit-box-shadow: 1px 1px 1px #c3c1c1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#c3c1c1');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#c3c1c1')";
+}
+.validate_arrow
+{
+	font-size:12px;
+	position:relative;
+}
+.validate_arrow span
+{
+	position:absolute;
+	font-size:15px;
+	z-index:1px;
+	display:block;
+}
+.validate_arrow span.inAr
+{
+	color:#fff;/*里面的颜色*/
+	z-index:2;
+	font-family : "宋体";/* 用方块做成的箭头会受字体样式的影响 */
+}
+.validate_arrow span.ouAr
+{
+	color:#bbb8b8;/*边框颜色*/
+	font-family : "宋体";/* 用方块做成的箭头会受字体样式的影响 */
+}
+/*我的背景色*/
+.validate_wrap_me
+{
+	background:#f1f1f1;/*背景色*/
+}
+.validate_arrow_me span.inAr
+{
+	color:#f1f1f1;/*里面的颜色*/
+	z-index:2;
+}
+/*鼠标上移样式改变*/
+.validate_wrap_hover
+{
+	background:#96c82b;/*背景色*/
+	/*阴影,不支持ie6*/
+	box-shadow: 1px 1px 1px #c3c1c1;
+	-moz-box-shadow: 1px 1px 1px #c3c1c1;
+	-webkit-box-shadow: 1px 1px 1px #c3c1c1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#c3c1c1');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#c3c1c1')";
+	
+	border:1px solid #bbb8b8;/*边框色*/
+	color:white;
+}
+.validate_arrow span.inAr_hover
+{
+	color:#96c82b;
+}
+.validate_arrow span.ouAr_hover
+{
+	color:#bbb8b8;
+}
+/*箭头向上*/
+.validate_arrow_top span
+{
+	left:100px;
+	top:0px;
+	_top:1px;
+}
+.validate_arrow_top span.inAr
+{
+	margin-top:1px;
+}
+/*箭头向左*/
+.validate_arrow_right span
+{
+	left:-7px;
+	top:6px;
+}
+.validate_arrow_right span.inAr
+{
+	margin-left:1px;
+}
+/*箭头向右*/
+.validate_arrow_left span
+{
+	right:-7px;
+	top:6px;
+}
+.validate_arrow_left span.inAr
+{
+	margin-right:1px;
+}
+/*箭头向下*/
+.validate_arrow_bottom span
+{
+	left:100px;
+	bottom:0px;
+	_bottom:-2px;
+}
+.validate_arrow_bottom span.inAr
+{
+	margin-bottom:1px;
+}
+/*密码进度条*/
+/*差*/
+.validate_red
+{
+	color:#c80000;
+}
+/*一般*/
+.validate_orange
+{
+	color:#ff5900;
+}
+/*极佳*/
+.validate_green
+{
+	color:#2bb820;
+}
+.validate_div
+{
+	display:inline;
+	padding:0px 5px;
+}
+.validate_bar,.validate_bar_green,.validate_bar_red,.validate_bar_orange
+{
+	height:4px;
+	overflow:hidden;
+	width:150px;
+	background:#bababa;
+	display:inline-block;
+	vertical-align:middle;
+	/*margin:0px 5px;*/
+	border:1px solid #9c9c9c;
+	position:relative;
+}
+.validate_bar_green
+{
+	background:#2ab720;
+	border:1px solid #08940f;
+	position:absolute;
+	margin:0px;
+}
+.validate_bar_red
+{
+	height:4px;
+	width:50px;
+	background:#cf0000;
+	border:1px solid #aa0000;
+	position:absolute;
+	margin:0px;
+}
+.validate_bar_orange
+{
+	width:100px;
+	background:#ff6600;
+	border:1px solid #d56100;
+	position:absolute;
+	margin:0px;
+}
+.validate_content
+{
+	/*margin-top:5px;*/
+	padding-left:23px;
+	padding-right:23px;
+}
+/**/
+.validate_error,.validate_success,.validate_tip,.validate_success_2,.validate_error_2
+{
+	height:15px;
+	background:url(images/ico_wrong.gif) left 50% no-repeat;
+	color:red;
+	margin-left:2px;
+	display:inline-block;
+	vertical-align:middle;
+	width:20px;
+}
+.validate_success,.validate_success_2
+{
+	background:url(images/ico_right.gif) left 50% no-repeat;
+	color:#555;
+}
+.validate_success_2,.validate_error_2
+{
+	display:inline-block;
+	*display:inline;
+	width:auto;
+	padding-left:15px;
+}
+.validate_tip
+{
+	background:url(images/ico_tip.gif) left 50% no-repeat;
+	color:#555;
+}
+.validate_txt
+{
+	color:#555;
+	display:inline-block;
+	vertical-align:middle;
+}
+.validate_input_error
+{
+	color:#a63b3b;
+	border:1px solid #a63b3b;
+	background:#fbe2e2 url(images/bg3.png) repeat-x;
+}
+.validate_input_focus
+{
+	color:#555;
+	border:1px solid #c6c69e;
+	background:#ffffcc url(images/bg2.png) repeat-x;
+}

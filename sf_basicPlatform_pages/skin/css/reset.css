@@ -1,0 +1,124 @@
+/* CSS Document */
+/*滚动条样*/
+
+@charset "UTF-8";
+
+*
+{
+	scrollbar-3dlight-color:#dbebfe; 
+    scrollbar-highlight-color:#fff; 
+    scrollbar-face-color:#dbebfe; 
+    scrollbar-arrow-color:#458ce4; 
+    scrollbar-shadow-color:#b8d6fa; 
+    scrollbar-darkshadow-color:#c2d6e2; 
+    scrollbar-base-color:#458ce4; 
+    scrollbar-track-color:#f3f9fe;
+    font-size:12px;
+    /*font-family: "EurostileRegular",Verdana,Arial,simsun,sans-serif;*/
+	font-family:Arial,Verdana,simsun,sans-serif;
+	margin:0px;
+	padding:0px;
+}
+body
+{
+    margin:0px;
+	padding:0px;
+	min-width : 970px;
+	/*direction: rtl;*/
+}
+ul,li,p,div
+{
+    margin:0px;
+	padding:0px;
+}
+ul,li
+{
+    list-style:none outside none;
+}
+img
+{
+    border:0px;
+}
+a
+{
+    color: #1287c4; 
+	text-decoration:none;
+	outline:none;
+	blr:expression(this.onFocus=this.blur());/*去掉a标签的虚线框*/
+	cursor:pointer;
+}
+a:hover
+{
+    color: #1287c4; 
+	text-decoration:none;
+}
+a:active
+{
+	color: red; 
+	text-decoration:none;
+}
+a:visited
+{
+	text-decoration:none;
+}
+.clear
+{
+    clear:both;
+}
+table
+{
+	border-collapse: collapse;
+ 	width:100%;
+/* 	table-layout: fixed; */
+}
+.float_left
+{
+	float:left;
+}
+.float_right
+{
+	float:right;
+}
+/* change Google font-size */
+html,body{
+	-webkit-text-size-adjust:none;
+	height:100%;
+}
+button
+{
+	border:0px;
+	cursor:pointer;
+	margin-left:5px;
+	display:inline-block;
+	padding-bottom:2px;
+}
+input,select,textarea
+{	
+	vertical-align:middle;
+	display:inline-block;
+	resize:none;
+}
+/*注释信息*/
+fieldset
+{
+	margin:5px;
+}
+fieldset legend
+{
+	margin-left:14px;
+	margin-left:5px\9;/*针对ie*/
+	color:black;
+	font-weight:normal;
+}
+fieldset .fieldset-content
+{
+	padding:10px;
+}
+.text_align_left
+{
+	text-align:left;
+}
+.text_align_right
+{
+	text-align:right;
+}
